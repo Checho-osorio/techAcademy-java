@@ -1,0 +1,126 @@
+{
+	"info": {
+		"_postman_id": "ead66793-2531-4883-8745-994476236b98",
+		"name": "ProyectoFinal - java - techAcademy",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "16772967"
+	},
+	"item": [
+		{
+			"name": "GetAll",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:7770/movie",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7770",
+					"path": [
+						"movie"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetMovie",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:7770/movie/1682189307059",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7770",
+					"path": [
+						"movie",
+						"1682189307059"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AddMovie",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"El Gran Hotel Budapest\",\r\n    \"sinopsis\": \"En la década de 1930, Gustave H, un legendario conserje de un famoso hotel europeo, se hace amigo de Zero Moustafa, el botones del hotel. Juntos se embarcan en una serie de aventuras mientras tratan de recuperar un cuadro valioso y luchan contra una familia que busca venganza\",\r\n    \"author\": \"Wes Anderson\",\r\n    \"year\": \"2014\",\r\n    \"qualification\": \"0.0\",\r\n    \"movieGenre\": \"Comedia/Drama\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:7770/movie",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7770",
+					"path": [
+						"movie"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateMovie",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"movieId\": \"1682189476155\",\r\n        \"title\": \"El Gran Hotel Budapest\",\r\n        \"sinopsis\": \"En la década de 1930, Gustave H, un legendario conserje de un famoso hotel europeo, se hace amigo de Zero Moustafa, el botones del hotel. Juntos se embarcan en una serie de aventuras mientras tratan de recuperar un cuadro valioso y luchan contra una familia que busca venganza\",\r\n        \"author\": \"Wes Anderson\",\r\n        \"year\": \"2014\",\r\n        \"qualification\": \"8.1\", //Se actualiza calificación\r\n        \"movieGenre\": \"Comedia/Drama\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:7770/movie/1682189476155",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7770",
+					"path": [
+						"movie",
+						"1682189476155"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteMovie",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:7770/movie/1682189476155",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7770",
+					"path": [
+						"movie",
+						"1682189476155"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
